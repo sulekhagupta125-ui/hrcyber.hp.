@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HR Cyber & Stationery Shop | Motihari</title>
+<meta name="description" content="HR Cyber & Stationery Shop in New Chandmari, Motihari — online services, printing, scanning, typing, resumes and stationery.">
+<style>
+:root{--navy:#071a33;--blue:#1261a0;--cyan:#19a7ce;--gold:#f6c84c;--ink:#172033;--muted:#667085;--bg:#f5f8fc;--white:#fff;--line:#e7edf5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:#061326;color:#d9e7f6;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:8px 0}
+.navbar{background:rgba(7,26,51,.96);color:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid #ffffff16;backdrop-filter:blur(12px)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.logo{width:45px;height:45px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#ffdf78);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:19px;box-shadow:0 8px 25px #0003}
+.brand small{display:block;color:#a9bdd3;font-weight:500;font-size:11px;letter-spacing:.5px}
+.navlinks{display:flex;gap:28px;align-items:center;font-size:14px}
+.navlinks a{color:#dbe7f2}.navlinks a:hover{color:var(--gold)}
+.nav-cta{padding:10px 17px;border-radius:9px;background:var(--gold);color:var(--navy)!important;font-weight:800}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 20%,#1e83be55,transparent 30%),linear-gradient(135deg,#06162c 0%,#0b3764 55%,#0d5b8f 100%);color:#fff}
+.hero:before{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff18;border-radius:50%;right:-100px;top:-150px}
+.hero .container{min-height:590px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px;padding:70px 0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#ffffff12;border:1px solid #ffffff24;border-radius:999px;padding:8px 13px;color:#d8eaf8;font-size:13px}
+.badge i{width:8px;height:8px;background:#36d68b;border-radius:50%}
+.hero h1{font-size:clamp(42px,5.2vw,70px);line-height:1.04;margin:20px 0 18px;letter-spacing:-2px}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:650px;color:#d9e7f3;font-size:18px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:14px 21px;border-radius:10px;font-weight:800;display:inline-flex;align-items:center;gap:9px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-outline{border:1px solid #ffffff3b;color:#fff;background:#ffffff0b}
+.hero-card{background:#ffffff0e;border:1px solid #ffffff20;border-radius:22px;padding:26px;box-shadow:0 25px 70px #00035;backdrop-filter:blur(12px)}
+.hero-card h3{font-size:21px;margin-bottom:5px}.hero-card>p{font-size:14px;color:#bdd1e4}
+.service-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.service-mini div{background:#ffffff0c;border:1px solid #ffffff13;padding:13px;border-radius:12px;font-size:13px;color:#e8f2fa}
+.section{padding:85px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:2px}
+.section h2{font-size:38px;line-height:1.15;margin:8px 0 10px;color:var(--navy)}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 10px 30px #183b5d0b;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px #183b5d18}
+.card .icon{width:52px;height:52px;border-radius:14px;background:#eaf5fc;display:grid;place-items:center;font-size:25px;margin-bottom:17px}
+.card h3{color:var(--navy);margin-bottom:7px;font-size:19px}.card p{color:var(--muted);font-size:14px}
+.highlight{background:#edf6fc}
+.price-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 12px 35px #183b5d0b}
+table{width:100%;border-collapse:collapse;min-width:550px}
+th,td{text-align:left;padding:17px 20px;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.6px}
+td{font-size:14px}.price{font-weight:800;color:var(--blue)}
+.contact{background:linear-gradient(135deg,#071a33,#0c527e);color:#fff}
+.contact .section-head h2{color:#fff}.contact .section-head p{color:#c8d9e8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{background:#ffffff0d;border:1px solid #ffffff1b;border-radius:18px;padding:26px}
+.contact-row{display:flex;gap:15px;padding:15px 0;border-bottom:1px solid #ffffff18}
+.contact-row:last-child{border:0}.contact-icon{font-size:22px;width:30px}
+.contact-row small{color:#a9c0d5;display:block}.contact-row strong{font-size:15px}
+.map-box{min-height:100%;border-radius:18px;background:linear-gradient(145deg,#123f62,#09253f);border:1px solid #ffffff1b;display:grid;place-items:center;text-align:center;padding:30px}
+.map-box .pin{font-size:42px}.map-box h3{margin:10px 0 4px}
+footer{background:#041124;color:#9db2c8;padding:25px 0;text-align:center;font-size:13px}
+.mobile-bar{display:none}
+@media(max-width:900px){.hero .container{grid-template-columns:1fr;min-height:auto;padding:65px 0}.hero-card{max-width:600px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){
+.topbar{display:none}.nav-inner{height:66px}.navlinks{display:none}.brand{font-size:14px}.logo{width:40px;height:40px}
+.hero .container{padding:55px 0}.hero h1{font-size:43px;letter-spacing:-1.3px}.hero p{font-size:16px}.hero-card{padding:20px}.section{padding:62px 0}.section h2{font-size:30px}.grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}
+.mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);z-index:100;padding:9px;gap:8px;box-shadow:0 -8px 25px #0001}.mobile-bar a{flex:1;text-align:center;padding:10px;border-radius:8px;font-weight:800;font-size:13px}.mobile-bar a:first-child{background:var(--navy);color:#fff}.mobile-bar a:last-child{background:#20b958;color:#fff}
+body{padding-bottom:67px}.topbar .container{display:block}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>📍 New Chandmari, Motihari – 845422</span><span>📞 77630 69025</span></div></div>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a class="brand" href="#">
+<div class="logo">HR</div><div>HR Cyber & Stationery Shop<small>CYBER • PRINTING • STATIONERY</small></div>
+</a>
+<nav class="navlinks">
+<a href="#services">Services</a><a href="#about">Why Us</a><a href="#prices">Price List</a><a href="#contact">Contact</a>
+<a class="nav-cta" href="tel:+917763069025">Call Now</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div>
+<div class="badge"><i></i> Your Local Digital Service Centre</div>
+<h1>Everything You Need.<br><span>One Place.</span></h1>
+<p>Online forms, printing, scanning, typing, resume services and quality stationery — reliable assistance for students, families and businesses in Motihari.</p>
+<div class="hero-buttons">
+<a class="btn btn-gold" href="https://wa.me/917763069025?text=Hello%20HR%20Cyber%20%26%20Stationery%20Shop" target="_blank">💬 WhatsApp Us</a>
+<a class="btn btn-outline" href="#services">Explore Services →</a>
+</div>
+</div>
+<div class="hero-card">
+<h3>HR Cyber & Stationery Shop</h3><p>New Chandmari, Motihari, Bihar – 845422</p>
+<div class="service-mini">
+<div>📝 Online Forms</div><div>🖨️ Printing</div><div>📄 Scanning</div><div>💼 Resume / CV</div><div>⌨️ Typing</div><div>📚 Stationery</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Our Services</div><h2>Digital & Stationery Services</h2><p>Fast, convenient and practical services for your everyday online and document needs.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📝</div><h3>Online Form Filling</h3><p>Online applications, exam forms, admission forms and other digital application assistance.</p></div>
+<div class="card"><div class="icon">🖨️</div><h3>Printing & Photocopy</h3><p>Black & white and colour printing with photocopy services for documents and forms.</p></div>
+<div class="card"><div class="icon">📄</div><h3>Scan & Upload</h3><p>Scan documents, photos and files and get help with online uploads.</p></div>
+<div class="card"><div class="icon">💼</div><h3>Resume & CV</h3><p>Clean and professional resumes and CVs for jobs, applications and admissions.</p></div>
+<div class="card"><div class="icon">⌨️</div><h3>Typing Services</h3><p>Hindi and English typing for letters, applications, documents and other work.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Stationery Shop</h3><p>Notebooks, pens, files, folders and useful school and office stationery items.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section highlight" id="about">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Why Choose Us</div><h2>Simple Service. Local Convenience.</h2><p>Visit us in New Chandmari or contact us directly before coming for your work.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⚡</div><h3>Convenient</h3><p>Multiple cyber, document and stationery services available at one shop.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Personal Assistance</h3><p>Get practical help with forms, documents, uploads and typing work.</p></div>
+<div class="card"><div class="icon">📍</div><h3>Easy to Reach</h3><p>Located at New Chandmari, Motihari – 845422.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="prices">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Price List</div><h2>Popular Services</h2><p>Sample prices shown below. Please confirm the current price at the shop.</p></div>
+<div class="price-wrap">
+<table><thead><tr><th>Service</th><th>Starting Price</th></tr></thead>
+<tbody>
+<tr><td>B/W Print</td><td class="price">₹2 / page</td></tr>
+<tr><td>Colour Print</td><td class="price">₹10 / page</td></tr>
+<tr><td>Photocopy</td><td class="price">₹2 / page</td></tr>
+<tr><td>Scanning</td><td class="price">₹10 से</td></tr>
+<tr><td>Resume / CV</td><td class="price">₹50 से</td></tr>
+<tr><td>Online Form</td><td class="price">₹30 से</td></tr>
+</tbody></table>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Contact HR Cyber & Stationery Shop</h2><p>For service enquiries, call or send us a WhatsApp message.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-row"><div class="contact-icon">📞</div><div><small>Phone</small><strong><a href="tel:+917763069025">77630 69025</a></strong></div></div>
+<div class="contact-row"><div class="contact-icon">💬</div><div><small>WhatsApp</small><strong><a href="https://wa.me/917763069025" target="_blank">Chat with us on WhatsApp</a></strong></div></div>
+<div class="contact-row"><div class="contact-icon">📍</div><div><small>Address</small><strong>New Chandmari, Motihari, Bihar – 845422</strong></div></div>
+</div>
+<div class="map-box"><div><div class="pin">📍</div><h3>New Chandmari, Motihari</h3><p>845422 • Bihar, India</p><br><a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=New%20Chandmari%2C%20Motihari%2C%20Bihar%20845422" target="_blank">Open in Google Maps</a></div></div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 HR Cyber & Stationery Shop • New Chandmari, Motihari</footer>
+
+<div class="mobile-bar"><a href="tel:+917763069025">📞 Call</a><a href="https://wa.me/917763069025?text=Hello%20HR%20Cyber%20%26%20Stationery%20Shop" target="_blank">💬 WhatsApp</a></div>
+</body>
+</html>
